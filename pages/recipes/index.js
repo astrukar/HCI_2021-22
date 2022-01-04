@@ -1,9 +1,13 @@
-const RecipesPage = () => {
+import React from "react";
+import { Container } from "react-bootstrap";
+import Footer from "../../components/footer/footer";
+
+const Recipes = () => {
   return (
-    <div>
-      <h1>Welcome To Our Recipes Page!</h1>
-    </div>
+    <Container fluid className={"no-gutters"}>
+      <Footer />
+    </Container>
   );
 };
 
-export default RecipesPage;
+export default Recipes;

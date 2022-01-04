@@ -1,8 +1,12 @@
+import { Container, Row, Col } from "react-bootstrap";
+import Footer from "../components/footer/footer";
+import Image from "next/image";
+
 const Home = () => {
   return (
-    <div>
-      <h1>Welcome To Our Home Page!</h1>
-    </div>
+    <Container fluid className={"no-gutters"}>
+      <Footer />
+    </Container>
   );
 };
 

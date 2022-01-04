@@ -1,8 +1,12 @@
+import React from "react";
+import { Container } from "react-bootstrap";
+import Footer from "../../components/footer/footer";
+
 const BlogDetailPage = () => {
   return (
-    <div>
-      <h1>Welcome To Our Blog Detail Page!</h1>
-    </div>
+    <Container fluid className={"no-gutters"}>
+      <Footer />
+    </Container>
   );
 };
 

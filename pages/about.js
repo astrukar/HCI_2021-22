@@ -1,9 +1,13 @@
-const AboutUsPage = () => {
+import React from "react";
+import { Container } from "react-bootstrap";
+import Footer from "../components/footer/footer";
+
+const AboutPage = () => {
   return (
-    <div>
-      <h1>Welcome To Our About Page!</h1>
-    </div>
+    <Container fluid className={"no-gutters"}>
+      <Footer />
+    </Container>
   );
 };
 
-export default AboutUsPage;
+export default AboutPage;
