@@ -12,14 +12,14 @@ const renderListItems = () =>
       key={id}
     >
       <ListItem
-        url={"https://via.placeholder.com/250x330.png"}
+        url={"https://via.placeholder.com/240x300.png"}
         title={"Healthy & Good Recipe"}
       />
     </Col>
   ));
 
 const ListContainer = () => {
-  return <Row className="pl-14">{renderListItems()}</Row>;
+  return <Row className="pl-14 pb-14">{renderListItems()}</Row>;
 };
 
 export default ListContainer;
