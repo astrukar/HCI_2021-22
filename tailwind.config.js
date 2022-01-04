@@ -1,10 +1,14 @@
-// tailwind.config.js
 module.exports = {
-  future: {},
-  purge: [],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        montserrat: ['"Montserrat"', "sans-serif"],
+      },
+    },
   },
-  variants: {},
   plugins: [],
 };
