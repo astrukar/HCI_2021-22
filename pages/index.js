@@ -3,6 +3,8 @@ import HomeBanner from "../components/homebanner/homebanner";
 import BannerWithImage from "../components/bannerWithImage/bannerWithImage";
 import Footer from "../components/footer/footer";
 import Image from "next/image";
+import Header from "../components/header/header";
+import backgroundImg from "../public/assets/healthyFood.png";
 const imageGallery = [
   {
     title: "Prosciutto Baked Bean Breakfast Frittata",
@@ -28,6 +30,7 @@ const renderImageGallery = () => {
 const Home = () => {
   return (
     <Container fluid className={"no-gutters"}>
+      <Header urlImg={backgroundImg} />
       <HomeBanner />
       <Container fluid>
         <Row className="flex justify-center">

@@ -1,48 +1,36 @@
 import React from "react";
 import Image from "next/image";
+import { Row, Col } from "react-bootstrap";
 
-import HeroImg from "../../assets/hero.png";
-
-const Header = () => {
+const Header = (props) => {
+  const { urlImg } = props;
   return (
-    <header className="h-80 relative flex items-center">
-      <Image
-        src={HeroImg}
-        className="z-0"
-        layout="fill"
-        objectFit="cover"
-        alt="Hero image"
-      />
-      <main className="max-w-4xl mx-auto flex-grow flex flex-col">
-        <div className="z-10 flex justify-between items-center mb-16">
-          <Image
-            src={LogoImg}
-            layout="fixed"
-            width={50}
-            height={50}
-            alt="Design logo"
-          />
-          <nav className="z-10">
-            <ul className="inline-flex list-none font-medium text-purple-900">
-              <li className="px-4 text-white bg-purple-900">Home</li>
-              <li className="px-4">About Us</li>
-              <li className="px-4">Showcase</li>
-              <li className="px-4">Blog</li>
-              <li className="px-4">Contact</li>
-              <li className="px-4">Sign In</li>
-            </ul>
-          </nav>
-        </div>
-        <div className="z-10">
-          <h1 className="text-5xl font-bold mb-2 text-purple-900">
-            Design Matters
-          </h1>
-          <h3 className="text-3xl text-purple-900 text-opacity-60">
-            Entrust us with your digital appearance
-          </h3>
-        </div>
-      </main>
-    </header>
+    <Row className="p-0">
+      <header className="h-56 relative flex">
+        <Image
+          src={urlImg}
+          className="z-0 w-100"
+          layout="fill"
+          alt="Background image"
+        />
+        <main className="mt-8 px-24">
+          <div className="z-10 flex justify-between">
+            <h1 className="z-10 text-white text-7xl font-montserrat font-bold">
+              HealthsGo
+            </h1>
+            <nav className="z-10 mt-9 pl-20">
+              <ul className="inline-flex list-none font-medium text-white font-montserrat text-lg">
+                <li className="px-4">Home</li>
+                <li className="px-4">Recipes</li>
+                <li className="px-4">Blog</li>
+                <li className="px-4">About</li>
+                <li className="px-4">Sign In</li>
+              </ul>
+            </nav>
+          </div>
+        </main>
+      </header>
+    </Row>
   );
 };
 
