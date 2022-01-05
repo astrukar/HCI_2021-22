@@ -60,7 +60,7 @@ const AboutContainer = () => {
           <br />
           <Button
             variant={`dark`}
-            className="w-52 md:w-64 joinUsButton text-sm md:text-base font-montserrat"
+            className="w-52 md:w-64 joinUsButton text-sm md:text-base font-montserrat hover:opacity-80"
           >
             Sign Up
           </Button>

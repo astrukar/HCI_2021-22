@@ -7,11 +7,18 @@ const BlogItem = (props) => {
   return (
     <Link href={"/"} passHref>
       <a className={`no-anchor-decoration hover:text-black`}>
-        <Image fluid src={url} className="w-full" alt="banner" />
-        <h1 className="py-2 font-montserrat text-3xl font-bold w-10/12">
+        <Image
+          fluid
+          src={url}
+          className="w-full hover:opacity-80"
+          alt="banner"
+        />
+        <h1 className="py-2 font-montserrat text-3xl font-bold w-10/12 hover:opacity-80">
           {title}
         </h1>
-        <p className="text-sm font-montserrat w-9/12">{description}</p>
+        <p className="text-sm font-montserrat w-9/12 hover:opacity-80">
+          {description}
+        </p>
       </a>
     </Link>
   );
