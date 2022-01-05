@@ -3,7 +3,7 @@ const AboutContainer = () => {
   return (
     <>
       <Row>
-        <h1 className="flex pl-5 md:justify-center font-extrabold text-5xl leading-10 font-montserrat text-6xl py-10">
+        <h1 className="flex pl-5 md:justify-center font-bold text-5xl leading-10 font-montserrat text-6xl py-20">
           About Us
         </h1>
         <Col sm={12} md={7} className="bg-neutral-100 pl-5 md:pl-16">

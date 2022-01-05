@@ -6,7 +6,7 @@ const Header = (props) => {
   const { urlImg } = props;
   return (
     <Row className="p-0">
-      <header className="h-56 relative flex">
+      <header className="h-80 relative flex">
         <Image
           src={urlImg}
           className="z-0 w-100"
