@@ -6,7 +6,7 @@ const SignInContainer = () => {
         <h1 className="flex justify-center font-extrabold text-5xl leading-10 font-montserrat pb-20">
           Login
         </h1>
-        <div className="pt-3 mb-5 flex justify-center">
+        <div className="pt-3 mb-4 pb-3 flex justify-center">
           <input
             className={`loginForm w-96 font-poppins italic text-black`}
             type="email"
@@ -15,10 +15,15 @@ const SignInContainer = () => {
         </div>
         <div className="pt-4 flex justify-center">
           <input
-            className={`mb-20 loginForm w-96 font-poppins italic text-black`}
+            className={`loginForm w-96 font-poppins italic text-black`}
             type="password"
             placeholder="Password"
           />
+        </div>
+        <div className="flex justify-center">
+          <span className="mt-2 pt-1 mb-20 pr-28 mr-40 font-montserrat linkPass text-xs">
+            Forgot Password?
+          </span>
         </div>
         <div className="mb-3 flex justify-center">
           <Button
