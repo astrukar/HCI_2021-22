@@ -4,7 +4,7 @@ const HomeBanner = () => {
   return (
     <Row className="px-0">
       <Col sm={12} className="py-12 bg-neutral-100">
-        <h1 className="flex justify-center font-extrabold text-5xl leading-10 font-montserrat pt-3 pb-2">
+        <h1 className="flex justify-center font-bold text-5xl leading-10 font-montserrat pt-3 pb-2">
           How To Improve Your Health
         </h1>
         <h2 className={`flex justify-center text-lg font-montserrat pt-3 pb-3`}>

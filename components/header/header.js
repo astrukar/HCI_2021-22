@@ -13,7 +13,7 @@ const Header = (props) => {
           layout="fill"
           alt="Background image"
         />
-        <main className="mt-8 px-24">
+        <main className="mt-8 px-28">
           <div className="z-10 flex justify-between">
             <h1 className="z-10 text-white text-7xl font-montserrat font-bold">
               HealthsGo

@@ -4,7 +4,7 @@ const BannerWithImage = () => {
   return (
     <Row className="bg-neutral-100 px-0">
       <Col className="lg:pl-16">
-        <h1 className="font-extrabold text-5xl leading-10 font-montserrat mt-4 pt-12 pb-4 ">
+        <h1 className="font-bold text-5xl leading-10 font-montserrat mt-4 pt-12 pb-4 ">
           Learn With Us
         </h1>
         <p className="text-lg font-montserrat pb-12 mb-5 ">
