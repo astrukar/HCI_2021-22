@@ -9,6 +9,16 @@ module.exports = {
         montserrat: ['"Montserrat"', "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
       },
+      colors: {
+        "hci-lila": {
+          light: "#ACD8A4",
+          DEFAULT: "#92B88B",
+          dark: "#769970",
+        },
+        "hci-header": {
+          DEFAULT: "#829F7E",
+        },
+      },
     },
   },
   plugins: [],

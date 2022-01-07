@@ -23,6 +23,9 @@
   }
 }
 
+.z--1 {
+  z-index: -1;
+}
 /*About Container Img & Subscribe To Our Letter*/
 .aboutimg {
   width: 100%;
