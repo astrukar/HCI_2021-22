@@ -3,6 +3,7 @@ import { Container, Row } from "react-bootstrap";
 import BlogContainer from "../../components/blogcontainer/blogcontainer";
 import Footer from "../../components/footer/footer";
 import Header from "../../components/header/header";
+import SearchInput from "../../components/searchinput/searchinput";
 import headerImage from "../../public/assets/healthylifestyle.png";
 
 const BlogPage = () => {
@@ -14,6 +15,7 @@ const BlogPage = () => {
           Nutrition Research Topics
         </div>
       </Row>
+      <SearchInput />
       <BlogContainer />
       <Footer />
     </Container>

@@ -18,6 +18,9 @@ module.exports = {
         "hci-header": {
           DEFAULT: "#829F7E",
         },
+        searchColor: {
+          DEFAULT: "#f7f6f2",
+        },
       },
     },
   },
