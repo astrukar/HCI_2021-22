@@ -4,7 +4,7 @@ import { Row, Col } from "react-bootstrap";
 import NavBar from "./navbar";
 import BurgerNavigation from "./burgernavigation";
 import hamburgerMenu from "../../public/hamburger.svg";
-const menuItems = ["Home", "Recipes", "Blog", "About"];
+const menuItems = ["Home", "Recipes", "Blog", "About", "Login"];
 
 import { useEffect, useState } from "react";
 const Header = (props) => {
@@ -22,7 +22,7 @@ const Header = (props) => {
 
   return (
     <Row className="p-0">
-      <header className="px-5 pb-5 relative flex bg-hci-header md:bg-transparent sm:h-28 md:h-56 lg:h-96">
+      <header className="sm:pl-4 lg:pl-10  relative flex bg-hci-header md:bg-transparent sm:h-28 md:h-56 lg:h-96">
         <div className="hidden md:block z--1">
           <Image
             src={urlImg}
@@ -33,12 +33,12 @@ const Header = (props) => {
           />
         </div>
 
-        <main className="sm:pt-16 max-w-6xl mx-auto flex-grow flex flex-col">
-          <div className="z-10 flex justify-between md:mb-16">
-            <h1 className="z-10 text-white text-4xl lg:text-7xl font-montserrat font-bold">
+        <main className="pt-6 max-w-6xl mx-auto flex-grow flex flex-col">
+          <div className="z-10 flex justify-between items-center">
+            <h1 className="z-10 pb-6 items-center text-white text-5xl lg:text-7xl font-montserrat font-bold">
               HealthsGo
             </h1>
-            <div className="flex items-center md:hidden">
+            <div className="pb-6 flex items-center md:hidden">
               <BurgerNavigation
                 menuItems={menuItems}
                 isOpen={isClicked}
