@@ -44,7 +44,7 @@ const AboutContainer = () => {
       </Row>
       <Row>
         <Col sm={12} className="bg-neutral-100 pl-5 md:pl-16 pb-14">
-          <h1 className="font-black text-5xl font-montserrat text-5xl pt-10">
+          <h1 className="font-extrabold text-5xl font-montserrat text-5xl pt-10">
             Sign Up To Our Newsletter
           </h1>
           <div className="text-sm lg:text-base font-montserrat w-3/5 pt-3 pb-9">

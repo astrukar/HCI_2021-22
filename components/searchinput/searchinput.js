@@ -7,7 +7,7 @@ const SearchInput = () => {
         <input
           id="search-input"
           type="text"
-          className="searchInput"
+          className="searchInput text-3xl md:text-4xl font-extralight"
           placeholder={"Search Topics..."}
         />
       </Col>
