@@ -7,7 +7,7 @@ const HomeBanner = () => {
         <h1 className="flex justify-center font-bold text-5xl leading-10 font-montserrat pt-3 pb-2">
           How To Improve Your Health
         </h1>
-        <h2 className={`flex justify-center text-lg font-montserrat pt-3 pb-3`}>
+        <h2 className="flex justify-center md:text-center text-lg font-montserrat pt-3 pb-3">
           Good nutrition is one of the keys to a healthy life. Understand how to
           live in a healthy, active way.
         </h2>
