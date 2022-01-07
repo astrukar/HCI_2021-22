@@ -7,8 +7,7 @@ import hamburgerMenu from "../../public/hamburger.svg";
 const menuItems = ["Home", "Recipes", "Blog", "About", "Login"];
 
 import { useEffect, useState } from "react";
-const Header = (props) => {
-  const { urlImg } = props;
+const Header = ({ classes, urlImg }) => {
   const [isClicked, setIsClicked] = useState(false);
 
   useEffect(() => {
@@ -22,7 +21,9 @@ const Header = (props) => {
 
   return (
     <Row className="p-0">
-      <header className="sm:pl-4 lg:pl-10  relative flex bg-hci-header md:bg-transparent sm:h-28 md:h-56 lg:h-96">
+      <header
+        className={`sm:pl-4 lg:pl-10  relative flex bg-hci-header md:bg-transparent sm:h-28 ${classes}`}
+      >
         <div className="hidden md:block z--1">
           <Image
             src={urlImg}
@@ -35,7 +36,7 @@ const Header = (props) => {
 
         <main className="pt-6 max-w-6xl mx-auto flex-grow flex flex-col">
           <div className="z-10 flex justify-between items-center">
-            <h1 className="z-10 pb-6 items-center text-white text-5xl lg:text-7xl font-montserrat font-bold">
+            <h1 className="z-10 pb-6 items-center text-white text-4xl md:text-5xl lg:text-7xl font-montserrat font-bold">
               HealthsGo
             </h1>
             <div className="pb-6 flex items-center md:hidden">

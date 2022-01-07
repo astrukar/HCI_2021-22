@@ -2,11 +2,12 @@ import { Container } from "react-bootstrap";
 import Footer from "../components/footer/footer";
 import Header from "../components/header/header";
 import SignInContainer from "../components/signincontainer/signincontainer";
-import backgroundImg from "../public/assets/signIn.png";
+import headerImage from "../public/assets/signIn.png";
+
 const SignIn = () => {
   return (
     <Container fluid className={"no-gutters"}>
-      <Header urlImg={backgroundImg} />
+      <Header urlImg={headerImage} classes="md:h-44" />
       <SignInContainer />
       <Footer />
     </Container>

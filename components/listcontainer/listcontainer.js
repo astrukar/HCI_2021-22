@@ -19,7 +19,7 @@ const renderListItems = () =>
   ));
 
 const ListContainer = () => {
-  return <Row className="pl-14 pb-14">{renderListItems()}</Row>;
+  return <Row className="pl-14 py-14">{renderListItems()}</Row>;
 };
 
 export default ListContainer;
