@@ -13,7 +13,7 @@ module.exports = {
         "hci-white": {
           light: "rgba(255, 255, 255, 0.25)",
           DEFAULT: "#92B88B",
-          dark: "rgba(255, 255, 255, 0.35)",
+          dark: "rgba(255, 255, 255, 0.40)",
         },
         "hci-header": {
           DEFAULT: "#829F7E",
