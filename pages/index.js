@@ -30,7 +30,7 @@ const renderImageGallery = () => {
 const Home = () => {
   return (
     <Container fluid className={"no-gutters"}>
-      <Header urlImg={headerImage} classes="md:h-44" />
+      <Header urlImg={headerImage} classes="md:h-44 lg:h-80" />
       <HomeBanner />
       <Container fluid>
         <Row className="flex justify-center">

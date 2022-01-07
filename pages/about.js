@@ -7,7 +7,7 @@ import headerImage from "../public/assets/aboutBackground.png";
 const AboutPage = () => {
   return (
     <Container fluid className={"no-gutters"}>
-      <Header urlImg={headerImage} classes="md:h-44" />
+      <Header urlImg={headerImage} classes="md:h-44 lg:h-80" />
       <AboutContainer />
       <Footer />
     </Container>
