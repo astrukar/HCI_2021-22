@@ -10,10 +10,10 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
       },
       colors: {
-        "hci-lila": {
-          light: "#ACD8A4",
+        "hci-white": {
+          light: "rgba(255, 255, 255, 0.25)",
           DEFAULT: "#92B88B",
-          dark: "#769970",
+          dark: "rgba(255, 255, 255, 0.35)",
         },
         "hci-header": {
           DEFAULT: "#829F7E",
