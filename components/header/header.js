@@ -22,7 +22,7 @@ const Header = ({ classes, urlImg }) => {
   return (
     <Row className="p-0">
       <header
-        className={`sm:pl-4 lg:pl-10  relative flex bg-hci-header md:bg-transparent sm:h-28 ${classes}`}
+        className={`pl-5 lg:pl-10  relative flex bg-hci-header md:bg-transparent sm:h-28 ${classes}`}
       >
         <div className="hidden md:block z--1">
           <Image

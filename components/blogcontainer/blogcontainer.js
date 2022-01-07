@@ -20,7 +20,7 @@ const renderBlogItems = () =>
 
 const BlogContainer = () => {
   return (
-    <Row className="pt-20 pl-3 md:pl-10 lg:pl-16 pr-3 md:pr-10 lg:pr-16pb-16">
+    <Row className="pt-20 pl-5 md:pl-10 lg:pl-16 pr-3 md:pr-10 lg:pr-16pb-16">
       {renderBlogItems()}
     </Row>
   );
