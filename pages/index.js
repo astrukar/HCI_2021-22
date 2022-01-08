@@ -5,6 +5,7 @@ import Footer from "../components/footer/footer";
 import Image from "next/image";
 import Header from "../components/header/header";
 import headerImage from "../public/assets/healthyFood.png";
+import { NextSeo } from "next-seo";
 const imageGallery = [
   {
     title: "Prosciutto Baked Bean Breakfast Frittata",
@@ -29,34 +30,37 @@ const renderImageGallery = () => {
 
 const Home = () => {
   return (
-    <Container fluid className={"no-gutters"}>
-      <Header urlImg={headerImage} classes="md:h-44 lg:h-80" />
-      <HomeBanner />
-      <Container fluid>
-        <Row className="flex justify-center">
-          <h1 className="font-montserrat text-4xl font-semibold flex justify-center py-16">
-            New Recipes
-          </h1>
-        </Row>
+    <>
+      <NextSeo title="HealthsGo" />
+      <Container fluid className={"no-gutters"}>
+        <Header urlImg={headerImage} classes="md:h-44 lg:h-80" />
+        <HomeBanner />
+        <Container fluid>
+          <Row className="flex justify-center">
+            <h1 className="font-montserrat text-4xl font-semibold flex justify-center py-16">
+              New Recipes
+            </h1>
+          </Row>
 
-        <div className="flex justify-center pl-10 pr-6">
-          {renderImageGallery()}
-        </div>
-      </Container>
-      <BannerWithImage />
-      <Container fluid>
-        <Row className="flex justify-center">
-          <h1 className="font-montserrat text-4xl font-semibold flex justify-center py-16">
-            All Diet & Nutrition Articles
-          </h1>
-        </Row>
+          <div className="flex justify-center pl-10 pr-6">
+            {renderImageGallery()}
+          </div>
+        </Container>
+        <BannerWithImage />
+        <Container fluid>
+          <Row className="flex justify-center">
+            <h1 className="font-montserrat text-4xl font-semibold flex justify-center py-16">
+              All Diet & Nutrition Articles
+            </h1>
+          </Row>
 
-        <div className="flex justify-center pl-10 pr-6">
-          {renderImageGallery()}
-        </div>
+          <div className="flex justify-center pl-10 pr-6">
+            {renderImageGallery()}
+          </div>
+        </Container>
+        <Footer />
       </Container>
-      <Footer />
-    </Container>
+    </>
   );
 };
 
