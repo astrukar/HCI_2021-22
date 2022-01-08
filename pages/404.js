@@ -2,11 +2,12 @@ import Link from "next/link";
 import { Container, Row } from "react-bootstrap";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
+import SEO from "../data/next-seo.config";
 
 const ErrorPage = () => {
   return (
     <>
-      <NextSeo title="Error Page" />
+      <NextSeo title={`${SEO.title} - Error`} />
       <Container fluid className="p-0">
         <div className="z--1 px-0">
           <Image

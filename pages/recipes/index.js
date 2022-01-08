@@ -5,11 +5,12 @@ import Footer from "../../components/footer/footer";
 import ListContainer from "../../components/listcontainer/listcontainer";
 import headerImage from "../../public/assets/cooking.png";
 import { NextSeo } from "next-seo";
+import SEO from "../../data/next-seo.config";
 
 const Recipes = () => {
   return (
     <>
-      <NextSeo title="Recipes" />
+      <NextSeo title={`${SEO.title} - Recipes`} />
       <Container fluid className={"no-gutters"}>
         <Header urlImg={headerImage} classes="md:h-44" />
         <Row className="flex justify-center">

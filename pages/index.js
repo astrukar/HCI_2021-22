@@ -6,6 +6,7 @@ import Image from "next/image";
 import Header from "../components/header/header";
 import headerImage from "../public/assets/healthyFood.png";
 import { NextSeo } from "next-seo";
+import SEO from "../data/next-seo.config";
 const imageGallery = [
   {
     title: "Prosciutto Baked Bean Breakfast Frittata",
@@ -31,7 +32,7 @@ const renderImageGallery = () => {
 const Home = () => {
   return (
     <>
-      <NextSeo title="HealthsGo" />
+      <NextSeo title={SEO.title} />
       <Container fluid className={"no-gutters"}>
         <Header urlImg={headerImage} classes="md:h-44 lg:h-80" />
         <HomeBanner />

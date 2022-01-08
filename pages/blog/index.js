@@ -6,11 +6,12 @@ import Header from "../../components/header/header";
 import SearchInput from "../../components/searchinput/searchinput";
 import headerImage from "../../public/assets/healthylifestyle.png";
 import { NextSeo } from "next-seo";
+import SEO from "../../data/next-seo.config";
 
 const BlogPage = () => {
   return (
     <>
-      <NextSeo title="Blog" />
+      <NextSeo title={`${SEO.title} - Blog`} />
       <Container fluid className={"no-gutters"}>
         <Header urlImg={headerImage} classes="md:h-44" />
         <Row>
