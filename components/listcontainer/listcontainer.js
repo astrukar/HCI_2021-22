@@ -8,7 +8,7 @@ const renderListItems = () =>
       md={4}
       lg={4}
       xl={3}
-      className={`mb-3 p-0 ${id % 2 === 0 ? "pr-sm-1" : "pl-sm-1"} px-lg-1`}
+      className={`mb-5 p-0 ${id % 2 === 0 ? "pr-sm-1" : "pl-sm-1"} px-lg-1`}
       key={id}
     >
       <ListItem

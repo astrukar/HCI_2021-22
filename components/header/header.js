@@ -4,6 +4,8 @@ import { Row, Col } from "react-bootstrap";
 import NavBar from "./navbar";
 import BurgerNavigation from "./burgernavigation";
 import hamburgerMenu from "../../public/hamburger.svg";
+import Link from "next/link";
+
 const menuItems = ["Home", "Recipes", "Blog", "About", "Login"];
 
 import { useEffect, useState } from "react";
@@ -36,9 +38,11 @@ const Header = ({ classes, urlImg }) => {
 
         <main className="pt-6 max-w-6xl mx-auto flex-grow flex flex-col">
           <div className="z-10 flex justify-between items-center">
-            <h1 className="z-10 pb-6 items-center text-white text-4xl md:text-5xl lg:text-7xl font-montserrat font-bold">
-              HealthsGo
-            </h1>
+            <Link href="/">
+              <a className="z-10 pb-6 items-center text-white text-4xl md:text-5xl lg:text-7xl font-montserrat font-bold hover:text-white">
+                HealthsGo
+              </a>
+            </Link>
             <div className="pb-6 flex items-center md:hidden">
               <BurgerNavigation
                 menuItems={menuItems}

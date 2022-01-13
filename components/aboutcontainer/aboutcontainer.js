@@ -47,7 +47,7 @@ const AboutContainer = () => {
           <h1 className="font-extrabold text-5xl font-montserrat text-5xl pt-10">
             Sign Up To Our Newsletter
           </h1>
-          <div className="text-sm lg:text-base font-montserrat w-3/5 pt-3 pb-9">
+          <div className="text-sm lg:text-base font-montserrat md:w-3/5 pt-3 pb-9">
             Get the best of health and lifestyle content, including nutritious
             recipes, lifestyle tips and the latest food and wellness trends when
             you sign-up to our HealthsGo newsletter.
