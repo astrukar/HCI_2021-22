@@ -3,9 +3,9 @@ import { Col, Image, Row } from "react-bootstrap";
 import Link from "next/link";
 
 const BlogItem = (props) => {
-  const { url, title, description } = props;
+  const { url, title, description, slug } = props;
   return (
-    <Link href={"/"} passHref>
+    <Link href={`/blog/${slug}`} passHref passHref>
       <a className={`no-anchor-decoration hover:text-black`}>
         <Image
           fluid
@@ -13,7 +13,7 @@ const BlogItem = (props) => {
           className="w-full hover:opacity-80"
           alt="banner"
         />
-        <h1 className="py-2 font-montserrat text-3xl font-bold w-10/12 hover:opacity-80">
+        <h1 className="py-2 font-montserrat text-2xl md:text-3xl font-bold w-10/12 hover:opacity-80">
           {title}
         </h1>
         <p className="text-sm font-montserrat w-9/12 hover:opacity-80">

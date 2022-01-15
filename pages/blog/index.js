@@ -7,8 +7,10 @@ import SearchInput from "../../components/searchinput/searchinput";
 import headerImage from "../../public/assets/healthylifestyle.png";
 import { NextSeo } from "next-seo";
 import SEO from "../../data/next-seo.config";
+import { getBlogPosts } from "../../lib/datasourceAPI";
 
-const BlogPage = () => {
+const BlogPage = ({ posts }) => {
+  console.log("Postovi hehheh", posts);
   return (
     <>
       <NextSeo title={`${SEO.title} - Blog`} />
@@ -20,7 +22,7 @@ const BlogPage = () => {
           </div>
         </Row>
         <SearchInput />
-        <BlogContainer />
+        <BlogContainer blogPosts={posts} />
         <Footer />
       </Container>
     </>
@@ -28,3 +30,12 @@ const BlogPage = () => {
 };
 
 export default BlogPage;
+
+export async function getStaticProps() {
+  const posts = await getBlogPosts();
+  return {
+    props: {
+      posts,
+    },
+  };
+}
