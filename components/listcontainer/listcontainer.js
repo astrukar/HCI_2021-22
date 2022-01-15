@@ -1,9 +1,9 @@
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, Button } from "react-bootstrap";
 import ListItem from "./listitem";
 
 const ListContainer = ({ recipes }) => {
   return (
-    <Row className="md:px-8 lg:px-20 py-8 md:py-14 lg:py-20">
+    <Row className="flex justify-center md:px-8 lg:px-20 py-16 md:py-14 lg:py-20">
       {recipes.map((recipe) => (
         <Col
           xs={6}
@@ -21,6 +21,12 @@ const ListContainer = ({ recipes }) => {
           />
         </Col>
       ))}
+      <Button
+        variant={`dark`}
+        className=" mt-5 w-52 md:w-64 joinUsButton text-sm md:text-base font-montserrat hover:opacity-80"
+      >
+        See More
+      </Button>
     </Row>
   );
 };
