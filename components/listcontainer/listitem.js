@@ -3,9 +3,9 @@ import { Col, Image, Row } from "react-bootstrap";
 import Link from "next/link";
 
 const ListItem = (props) => {
-  const { url, title, description } = props;
+  const { url, title, description, slug } = props;
   return (
-    <Link href={"/"} passHref>
+    <Link href={`/recipes/${slug}`} passHref>
       <a className="no-anchor-decoration hover:text-black">
         <Image
           fluid
