@@ -3,14 +3,14 @@ import ListItem from "./listitem";
 
 const ListContainer = ({ recipes }) => {
   return (
-    <Row className="flex justify-center md:px-8 lg:px-20 py-16 md:py-14 lg:py-20">
+    <Row className="flex justify-center md:px-8 lg:px-28 py-16 md:py-14 lg:py-20">
       {recipes.map((recipe) => (
         <Col
           xs={6}
           md={4}
           lg={3}
           xl={3}
-          className={`mb-5 p-0 px-2 px-lg-3`}
+          className={`mb-16 p-0 px-2 px-lg-3`}
           key={recipe.sys.id}
         >
           <ListItem

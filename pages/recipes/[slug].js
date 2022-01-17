@@ -2,7 +2,7 @@ import { Container, Row } from "react-bootstrap";
 import Footer from "../../components/footer/footer";
 import { NextSeo } from "next-seo";
 import SEO from "../../data/next-seo.config";
-import { getRecipes, getSlugs } from "../../lib/datasourceAPI";
+import { getRecipesBySlug, getSlugs } from "../../lib/datasourceAPI";
 import RecipeInfo from "../../components/recipeInfo/recipeinfo";
 import Header from "../../components/header/header";
 import headerImage from "../../public/assets/aboutBackground.png";
@@ -13,8 +13,8 @@ const RecipeDetailPage = ({ recipe }) => {
     <>
       <NextSeo title={`${SEO.title} - Recipe Detail`} />
       <Container fluid className={"no-gutters"}>
-        <Header urlImg={headerImage} classes="md:h-44 lg:h-80" />
-        <RecipeInfo />
+        <Header urlImg={recipe.desktopImage.url} classes="md:h-44 lg:h-96" />
+        <RecipeInfo recipe={recipe} />
         <NutritionInfo />
         <Footer />
       </Container>
@@ -25,8 +25,7 @@ const RecipeDetailPage = ({ recipe }) => {
 export default RecipeDetailPage;
 
 export async function getStaticProps({ params }) {
-  const recipe = await getRecipes({ slug: params.slug });
-  console.log("Recipe", recipe);
+  const recipe = await getRecipesBySlug(params.slug);
   return {
     props: {
       recipe,

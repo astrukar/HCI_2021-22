@@ -57,9 +57,12 @@ const renderRecipes = () => {
   return recipes.map((i, id) => {
     return (
       <Link href={`/recipes/${i.slug}`}>
-        <Col className="pb-16 mb-2 pr-2 lg:pr-5 homegallery" key={id}>
-          <img src={i.imgUrl} className="img" alt={"Text Img Alt"} />
-          <div className={`pt-2 font-montserrat text-lg font-bold`}>
+        <Col
+          className="pb-16 mb-2 pr-2 lg:pr-5 pointer hover:opacity-80"
+          key={id}
+        >
+          <img src={i.imgUrl} alt={"Text Img Alt"} />
+          <div className={`pt-2 font-montserrat text-sm lg:text-lg font-bold`}>
             {i.title}
           </div>
         </Col>
@@ -70,10 +73,13 @@ const renderRecipes = () => {
 const renderArticles = () => {
   return articles.map((i, id) => {
     return (
-      <Link href={`/recipes/${i.slug}`}>
-        <Col className="pb-16 mb-2 pr-2 lg:pr-5 homegallery" key={id}>
-          <img src={i.imgUrl} className="img" alt={"Text Img Alt"} />
-          <div className={`pt-2 font-montserrat text-lg font-bold`}>
+      <Link href={i.slug}>
+        <Col
+          className="pb-16 mb-2 pr-2 lg:pr-5 pointer hover:opacity-80"
+          key={id}
+        >
+          <img src={i.imgUrl} alt={"Text Img Alt"} />
+          <div className={`pt-2 font-montserrat text-sm lg:text-lg font-bold`}>
             {i.title}
           </div>
         </Col>
@@ -90,26 +96,22 @@ const Home = () => {
         <HomeBanner />
         <Container fluid>
           <Row className="flex justify-center">
-            <h1 className="font-montserrat text-4xl font-semibold flex justify-center py-16">
+            <h1 className="font-montserrat text-3xl lg:text-4xl font-semibold flex justify-center py-16">
               New Recipes
             </h1>
           </Row>
 
-          <div className="flex justify-center pl-10 pr-6">
-            {renderRecipes()}
-          </div>
+          <div className="flex lg:pl-10 lg:pr-6">{renderRecipes()}</div>
         </Container>
         <BannerWithImage />
         <Container fluid>
           <Row className="flex justify-center">
-            <h1 className="font-montserrat text-4xl font-semibold flex justify-center py-16">
+            <h1 className="font-montserrat text-3xl lg:text-4xl font-semibold flex justify-center py-16">
               All Diet & Nutrition Articles
             </h1>
           </Row>
 
-          <div className="flex justify-center pl-10 pr-6">
-            {renderArticles()}
-          </div>
+          <div className="flex lg:pl-10 lg:pr-6">{renderArticles()}</div>
         </Container>
         <Footer />
       </Container>
