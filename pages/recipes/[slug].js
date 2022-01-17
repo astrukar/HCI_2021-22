@@ -2,7 +2,7 @@ import { Container, Row } from "react-bootstrap";
 import Footer from "../../components/footer/footer";
 import { NextSeo } from "next-seo";
 import SEO from "../../data/next-seo.config";
-import { getRecipesBySlug, getSlugs } from "../../lib/datasourceAPI";
+import { getRecipeBySlug, getRecipeSlugs } from "../../lib/datasourceAPI";
 import RecipeInfo from "../../components/recipeInfo/recipeinfo";
 import Header from "../../components/header/header";
 import headerImage from "../../public/assets/aboutBackground.png";
@@ -25,7 +25,7 @@ const RecipeDetailPage = ({ recipe }) => {
 export default RecipeDetailPage;
 
 export async function getStaticProps({ params }) {
-  const recipe = await getRecipesBySlug(params.slug);
+  const recipe = await getRecipeBySlug(params.slug);
   return {
     props: {
       recipe,
@@ -34,7 +34,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const slugs = await getSlugs();
+  const slugs = await getRecipeSlugs();
   const paths = slugs.map(({ slug }) => ({
     params: {
       slug,

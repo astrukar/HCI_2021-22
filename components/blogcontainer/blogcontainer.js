@@ -2,7 +2,6 @@ import { Col, Row, Button } from "react-bootstrap";
 import BlogItem from "./blogitem";
 
 const BlogContainer = ({ blogPosts }) => {
-  console.log("Blog Postovi", blogPosts);
   return (
     <Row className="flex justify-center pt-24 pl-5 md:pl-10 lg:pl-16 pr-3 md:pr-10 lg:pr-16 pb-16">
       {blogPosts.map((post) => (
@@ -11,7 +10,6 @@ const BlogContainer = ({ blogPosts }) => {
             url={post.featuredImage.url}
             title={post.headline}
             description={post.descriptionBox}
-            ž
             slug={post.slug}
           />
         </Col>

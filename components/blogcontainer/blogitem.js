@@ -5,7 +5,7 @@ import Link from "next/link";
 const BlogItem = (props) => {
   const { url, title, description, slug } = props;
   return (
-    <Link href={`/blog/${slug}`} passHref passHref>
+    <Link href={`/blog/${slug}`} passHref>
       <a className={`no-anchor-decoration hover:text-black`}>
         <Image
           fluid

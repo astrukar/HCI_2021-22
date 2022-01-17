@@ -10,7 +10,6 @@ import SEO from "../../data/next-seo.config";
 import { getBlogPosts } from "../../lib/datasourceAPI";
 
 const BlogPage = ({ posts }) => {
-  console.log("Postovi hehheh", posts);
   return (
     <>
       <NextSeo title={`${SEO.title} - Blog`} />

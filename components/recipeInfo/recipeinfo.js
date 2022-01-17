@@ -1,7 +1,6 @@
 import { Row, Col } from "react-bootstrap";
 
 const RecipeInfo = ({ recipe }) => {
-  console.log(recipe);
   return (
     <Row className="px-0 pb-28">
       <h1 className="flex pl-5 md:justify-center font-bold leading-10 font-montserrat text-3xl md:text-5xl lg:text-6xl py-24">
