@@ -7,28 +7,80 @@ import Header from "../components/header/header";
 import headerImage from "../public/assets/healthyFood.png";
 import { NextSeo } from "next-seo";
 import SEO from "../data/next-seo.config";
-const imageGallery = [
+import Link from "next/link";
+const recipes = [
   {
     title: "Prosciutto Baked Bean Breakfast Frittata",
-    url: "/assets/image1.jpeg",
+    imgUrl: "/assets/homegallery/recipe1.png",
+    slug: "bean-breakfast-frittata",
   },
-  { title: "Thai Penaut Chicken Lettuce Wraps", url: "/assets/image2.jpeg" },
-  { title: "Blueberry Oat Crisp", url: "/assets/image3.jpeg" },
-  { title: "Berry Banana Smoothie Bowl", url: "/assets/image4.jpeg" },
+  {
+    title: "Thai Penaut Chicken Lettuce Wraps",
+    imgUrl: "/assets/homegallery/recipe2.png",
+    slug: "chicken-lettuce-wraps",
+  },
+  {
+    title: "Blueberry Oat Crisp",
+    imgUrl: "/assets/homegallery/recipe3.png",
+    slug: "blueberry-oat-crisp",
+  },
+  {
+    title: "Berry Banana Smoothie Bowl",
+    imgUrl: "assets/homegallery/recipe4.png",
+    slug: "banana-smoothie-bowl",
+  },
 ];
-const renderImageGallery = () => {
-  return imageGallery.map((i, id) => {
+
+const articles = [
+  {
+    title: "Can Coffee or Tea Help Prevent Dementia and Stroke?",
+    imgUrl: "/assets/homegallery/article1.png",
+    slug: "/",
+  },
+  {
+    title: "The Best Hydrating Foods for Diabetes",
+    imgUrl: "/assets/homegallery/article2.png",
+    slug: "/",
+  },
+  {
+    title: "Using Nutritional Supplements To Improve Sporting Performance",
+    imgUrl: "/assets/homegallery/article3.png",
+    slug: "/",
+  },
+  {
+    title: "How What You Eat Affects Your Sleep",
+    imgUrl: "/assets/homegallery/article4.png",
+    slug: "/",
+  },
+];
+const renderRecipes = () => {
+  return recipes.map((i, id) => {
     return (
-      <Col className="pb-16 mb-2 pr-2 lg:pr-5" key={id}>
-        <img src={i.url} className="img" alt={"Text Img Alt"} />
-        <div className={`pt-2 font-montserrat text-lg font-bold`}>
-          {i.title}
-        </div>
-      </Col>
+      <Link href={`/recipes/${i.slug}`}>
+        <Col className="pb-16 mb-2 pr-2 lg:pr-5 homegallery" key={id}>
+          <img src={i.imgUrl} className="img" alt={"Text Img Alt"} />
+          <div className={`pt-2 font-montserrat text-lg font-bold`}>
+            {i.title}
+          </div>
+        </Col>
+      </Link>
     );
   });
 };
-
+const renderArticles = () => {
+  return articles.map((i, id) => {
+    return (
+      <Link href={`/recipes/${i.slug}`}>
+        <Col className="pb-16 mb-2 pr-2 lg:pr-5 homegallery" key={id}>
+          <img src={i.imgUrl} className="img" alt={"Text Img Alt"} />
+          <div className={`pt-2 font-montserrat text-lg font-bold`}>
+            {i.title}
+          </div>
+        </Col>
+      </Link>
+    );
+  });
+};
 const Home = () => {
   return (
     <>
@@ -44,7 +96,7 @@ const Home = () => {
           </Row>
 
           <div className="flex justify-center pl-10 pr-6">
-            {renderImageGallery()}
+            {renderRecipes()}
           </div>
         </Container>
         <BannerWithImage />
@@ -56,7 +108,7 @@ const Home = () => {
           </Row>
 
           <div className="flex justify-center pl-10 pr-6">
-            {renderImageGallery()}
+            {renderArticles()}
           </div>
         </Container>
         <Footer />
