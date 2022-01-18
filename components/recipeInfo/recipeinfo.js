@@ -7,15 +7,15 @@ const RecipeInfo = ({ recipe }) => {
         {recipe.headline}
       </h1>
       <Col sm={12} lg={6}>
-        <h1 className="pl-4 lg:pl-16 font-bold text-xl md:text-3xl font-montserrat pb-4">
+        <h1 className="pl-4 lg:pl-16 font-bold text-xl md:text-3xl font-montserrat pb-3">
           Ingredients
         </h1>
-        <ul className="font-montserrat font-light pl-4 lg:pl-16">
+        <ul className="font-montserrat font-light pl-4 lg:pl-16 pb-16">
           {recipe.ingredientsContainer}
         </ul>
       </Col>
       <Col sm={12} lg={6}>
-        <h1 className="pl-4 lg:pl-10 font-bold text-xl md:text-3xl font-montserrat pb-4 ">
+        <h1 className="pl-4 lg:pl-10 font-bold text-xl md:text-3xl font-montserrat pb-3">
           Instructions
         </h1>
         <div className="font-montserrat font-light pl-4 lg:pl-10 pr-10">

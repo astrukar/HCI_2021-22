@@ -3,7 +3,7 @@ import ListItem from "./listitem";
 
 const ListContainer = ({ recipes }) => {
   return (
-    <Row className="flex justify-center md:px-8 lg:px-28 py-16 md:py-14 lg:py-20">
+    <Row className="flex justify-start pl-2 pr-2 md:px-8 lg:px-28 pt-16 md:pt-14 lg:pt-14">
       {recipes.map((recipe) => (
         <Col
           xs={6}
@@ -21,12 +21,14 @@ const ListContainer = ({ recipes }) => {
           />
         </Col>
       ))}
-      <Button
-        variant={`dark`}
-        className=" mt-5 w-52 md:w-64 joinUsButton text-sm md:text-base font-montserrat hover:opacity-80"
-      >
-        See More
-      </Button>
+      <Row className="flex justify-center md:px-8 lg:px-28 pb-16 md:pb-14 lg:pb-20">
+        <Button
+          variant={`dark`}
+          className=" mt-5 w-52 md:w-64 joinUsButton text-sm md:text-base font-montserrat hover:opacity-80"
+        >
+          See More
+        </Button>
+      </Row>
     </Row>
   );
 };
