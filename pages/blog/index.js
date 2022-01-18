@@ -8,6 +8,8 @@ import headerImage from "../../public/assets/healthylifestyle.png";
 import { NextSeo } from "next-seo";
 import SEO from "../../data/next-seo.config";
 import { getBlogPosts } from "../../lib/datasourceAPI";
+import imgMobile from "../../public/assets/homegallery/mobileimages/blog.png";
+import MobileImage from "../../components/mobileImg/mobile";
 
 const BlogPage = ({ posts }) => {
   return (
@@ -15,6 +17,7 @@ const BlogPage = ({ posts }) => {
       <NextSeo title={`${SEO.title} - Blog`} />
       <Container fluid className={"no-gutters"}>
         <Header urlImg={headerImage} classes="md:h-44" />
+        <MobileImage headerMobile={imgMobile} />
         <Row>
           <div className="flex pl-5 md:justify-center font-bold text-4xl leading-10 font-montserrat md:text-5xl py-20">
             Nutrition Research Topics

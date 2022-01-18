@@ -9,6 +9,9 @@ import { NextSeo } from "next-seo";
 import SEO from "../../data/next-seo.config";
 import { getRecipes } from "../../lib/datasourceAPI";
 import { Tag, FilterTag } from "../../components/listcontainer/tags";
+import imgMobile from "../../public/assets/homegallery/mobileimages/recipe.png";
+import MobileImage from "../../components/mobileImg/mobile";
+
 const Recipes = ({ recipes, tags }) => {
   const [activeTags, setActiveTags] = useState([]);
   const toggleActive = (text) =>
@@ -31,6 +34,7 @@ const Recipes = ({ recipes, tags }) => {
       <NextSeo title={`${SEO.title} - Recipes`} />
       <Container fluid className={"no-gutters"}>
         <Header urlImg={headerImage} classes="md:h-44" />
+        <MobileImage headerMobile={imgMobile} />
         <Row className="flex justify-center">
           <div className="flex pl-5 md:justify-center font-bold text-5xl leading-10 font-montserrat md:text-6xl pt-20">
             Recipes
