@@ -15,7 +15,6 @@ const RecipeDetailPage = ({ recipe }) => {
       <Container fluid className={"no-gutters"}>
         <Header urlImg={recipe.desktopImage.url} classes="md:h-44 lg:h-96" />
         <RecipeInfo recipe={recipe} />
-        <NutritionInfo />
         <Footer />
       </Container>
     </>
