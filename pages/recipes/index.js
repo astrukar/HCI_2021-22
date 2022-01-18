@@ -83,7 +83,7 @@ export async function getStaticProps() {
     return [...tags, ...recipe.tags];
   }, []);
   const tags = Array.from(new Set(unionOfTags));
-  console.log(tags);
+
   return {
     props: {
       recipes,

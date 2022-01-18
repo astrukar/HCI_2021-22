@@ -7,6 +7,7 @@ import RecipeInfo from "../../components/recipeInfo/recipeinfo";
 import Header from "../../components/header/header";
 import headerImage from "../../public/assets/aboutBackground.png";
 import NutritionInfo from "../../components/recipeInfo/nutritioninfo";
+import MobileImage from "../../components/mobileImg/mobile";
 
 const RecipeDetailPage = ({ recipe }) => {
   return (
@@ -14,6 +15,7 @@ const RecipeDetailPage = ({ recipe }) => {
       <NextSeo title={`${SEO.title} - Recipe Detail`} />
       <Container fluid className={"no-gutters"}>
         <Header urlImg={recipe.desktopImage.url} classes="md:h-44 lg:h-96" />
+        <MobileImage headerMobile={recipe.mobileImage.url} />
         <RecipeInfo recipe={recipe} />
         <Footer />
       </Container>

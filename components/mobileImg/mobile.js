@@ -7,6 +7,8 @@ const MobileImage = ({ headerMobile }) => {
       <Image
         src={headerMobile}
         layout="responsive"
+        width={428}
+        height={215}
         objectFit="cover"
         priority
         alt="Hero image"
