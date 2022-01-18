@@ -8,6 +8,8 @@ import headerImage from "../public/assets/healthyFood.png";
 import { NextSeo } from "next-seo";
 import SEO from "../data/next-seo.config";
 import Link from "next/link";
+import MobileImage from "../components/mobileImg/mobile";
+import imgMobile from "../public/assets/homegallery/mobileimages/imagehome.png";
 const recipes = [
   {
     title: "Prosciutto Baked Bean Breakfast Frittata",
@@ -93,6 +95,7 @@ const Home = () => {
       <NextSeo title={SEO.title} />
       <Container fluid className={"no-gutters"}>
         <Header urlImg={headerImage} classes="md:h-44 lg:h-80" />
+        <MobileImage headerMobile={imgMobile} />
         <HomeBanner />
         <Container fluid>
           <Row className="flex justify-center">
