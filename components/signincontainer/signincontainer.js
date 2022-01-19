@@ -3,7 +3,7 @@ const SignInContainer = () => {
   return (
     <Row>
       <Col className="pt-20">
-        <h1 className="flex justify-center font-bold text-5xl leading-10 font-montserrat pb-20">
+        <h1 className="flex justify-center font-bold text-5xl lg:text-6xl leading-10 font-montserrat pb-16">
           Login
         </h1>
         <div className="pt-3 mb-4 pb-3 flex justify-center">

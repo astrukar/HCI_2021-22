@@ -19,7 +19,7 @@ const BlogPage = ({ posts }) => {
         <Header urlImg={headerImage} classes="md:h-44" />
         <MobileImage headerMobile={imgMobile} />
         <Row>
-          <div className="flex pl-5 md:justify-center font-bold text-5xl leading-10 font-montserrat md:text-6xl py-20">
+          <div className="flex pl-5 md:justify-center font-bold text-4xl leading-10 font-montserrat md:text-5xl lg:text-6xl py-12 md:py-20">
             Nutrition Research Topics
           </div>
         </Row>

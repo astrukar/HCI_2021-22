@@ -24,7 +24,7 @@ const Header = ({ classes, urlImg }) => {
   return (
     <Row className="p-0">
       <header
-        className={`pl-5 lg:pl-10  relative flex bg-hci-header md:bg-transparent sm:h-28 ${classes}`}
+        className={`pl-5 lg:pl-10 relative flex bg-teal-800 md:bg-transparent sm:h-28 ${classes}`}
       >
         <div className="hidden md:block z--1">
           <Image
@@ -33,7 +33,7 @@ const Header = ({ classes, urlImg }) => {
             objectFit="cover"
             priority
             alt="Hero image"
-            className="brightness-90"
+            className="brightness-75"
           />
         </div>
 

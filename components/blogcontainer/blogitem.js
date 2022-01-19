@@ -16,7 +16,7 @@ const BlogItem = (props) => {
         <h1 className="py-2 font-montserrat text-2xl md:text-3xl font-bold w-10/12 hover:opacity-80">
           {title}
         </h1>
-        <p className="text-sm md:text-base font-montserrat w-7/12 hover:opacity-80">
+        <p className="text-sm md:text-base font-montserrat w-9/12 hover:opacity-80">
           {description}
         </p>
       </a>

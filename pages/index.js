@@ -9,7 +9,7 @@ import { NextSeo } from "next-seo";
 import SEO from "../data/next-seo.config";
 import Link from "next/link";
 import MobileImage from "../components/mobileImg/mobile";
-import imgMobile from "../public/assets/homegallery/mobileimages/imagehome.png";
+import imgMobile from "../public/assets/homegallery/mobileimages/home.png";
 import { articles, recipes } from "../data/homedata";
 
 const renderRecipes = (props) => {
@@ -35,7 +35,7 @@ const Home = () => {
     <>
       <NextSeo title={SEO.title} />
       <Container fluid className={"no-gutters"}>
-        <Header urlImg={headerImage} classes="md:h-44 lg:h-80" />
+        <Header urlImg={imgMobile} classes="md:h-44 lg:h-96" />
         <MobileImage headerMobile={imgMobile} />
         <HomeBanner />
         <Container fluid>

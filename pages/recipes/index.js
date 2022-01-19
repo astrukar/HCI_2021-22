@@ -36,7 +36,7 @@ const Recipes = ({ recipes, tags }) => {
         <Header urlImg={headerImage} classes="md:h-44" />
         <MobileImage headerMobile={imgMobile} />
         <Row className="flex justify-center">
-          <div className="flex pl-5 md:justify-center font-bold text-5xl leading-10 font-montserrat md:text-6xl pt-20">
+          <div className="flex pl-5 md:justify-center font-bold text-5xl leading-10 font-montserrat md:text-6xl pt-16 md:pt-20">
             Recipes
           </div>
           <p className="max-w-4xl md:text-center text-sm md:text-base font-montserrat pt-3 pb-10 pl-6">

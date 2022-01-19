@@ -3,10 +3,17 @@ const AboutContainer = () => {
   return (
     <>
       <Row>
-        <h1 className="flex pl-5 md:justify-center font-bold text-5xl leading-10 font-montserrat md:text-6xl py-20">
+        <h1 className="flex px-4 md:justify-center font-bold text-5xl leading-10 font-montserrat md:text-6xl pt-12 md:pt-20">
           About Us
         </h1>
-        <Col sm={12} md={7} className="bg-neutral-100 pl-5 md:pl-16">
+        <div className="flex justify-center p-0">
+          <span className="max-w-4xl md:text-center text-sm md:text-base font-montserrat mt-3 pb-12 md:pb-20 px-4">
+            We give you simple answers to important questions on food and
+            health. Subscribing to HealthsGo Guide makes it easy and enjoyable
+            to eat well and feel great.
+          </span>
+        </div>
+        <Col sm={12} md={7} className="bg-neutral-100 pl-5 pr-3.5 md:pl-16">
           <h2 className="font-montserrat font-bold text-4xl pt-12 pb-4">
             Who We Are
           </h2>
@@ -25,7 +32,7 @@ const AboutContainer = () => {
         </Col>
       </Row>
       <Row>
-        <Col sm={12} md={7} className="pl-5 md:pl-16">
+        <Col sm={12} md={7} className="pl-5 pr-3.5 md:pl-16">
           <h1 className="font-montserrat font-bold text-4xl pt-12 pb-4">
             Our Goals
           </h1>
@@ -44,7 +51,7 @@ const AboutContainer = () => {
       </Row>
       <Row>
         <Col sm={12} className="bg-neutral-100 pl-5 md:pl-16 pb-14">
-          <h1 className="font-extrabold text-5xl font-montserrat text-5xl pt-10">
+          <h1 className="font-extrabold text-4xl font-montserrat md:text-5xl pt-10">
             Sign Up To Our Newsletter
           </h1>
           <div className="text-sm lg:text-base font-montserrat md:w-3/5 pt-3 pb-9">
