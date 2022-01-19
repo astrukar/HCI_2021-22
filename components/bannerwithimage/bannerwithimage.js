@@ -1,9 +1,10 @@
 import { Row, Col } from "react-bootstrap";
+import Image from "next/image";
 
 const BannerWithImage = () => {
   return (
     <Row className="flex items-center bg-neutral-100 px-0">
-      <Col sm={12} md={6} className="pl-5 lg:pl-16">
+      <Col sm={12} lg={6} className="pl-5 lg:pl-16">
         <h1 className="font-bold text-4xl lg:text-5xl leading-10 font-montserrat mt-5 md:mt-2 pb-3">
           Learn With Us
         </h1>
@@ -12,11 +13,15 @@ const BannerWithImage = () => {
           get you moving in the right direction.
         </p>
       </Col>
-      <Col sm={12} md={6} className="p-0">
-        <img
-          src="/assets/eatinghealthy.png"
-          className="w-full sm:h-screen md:h-60 lg:h-80"
-          alt="Home banner Image"
+      <Col sm={12} lg={6} className="p-0">
+        <Image
+          src={`/assets/eatinghealthy.png`}
+          layout="responsive"
+          width={650}
+          height={300}
+          objectFit="cover"
+          priority
+          alt="Hero image"
         />
       </Col>
     </Row>
