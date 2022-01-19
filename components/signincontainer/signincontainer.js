@@ -36,7 +36,7 @@ const SignInContainer = () => {
         <div className="mb-16 flex justify-center">
           <Button
             variant={`warning`}
-            className="w-52 md:w-64 registrationButton text-sm md:text-base font-montserrat hover:text-white hover:opacity-80"
+            className="w-52 md:w-64 registrationButton text-sm md:text-base font-montserrat text-white hover:text-white hover:opacity-80"
           >
             Not A Member Yet?
           </Button>
