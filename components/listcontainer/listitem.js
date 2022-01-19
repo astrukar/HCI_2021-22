@@ -6,7 +6,7 @@ const ListItem = (props) => {
   const { url, title, description, slug } = props;
   return (
     <Link href={`/recipes/${slug}`} passHref>
-      <a className="no-anchor-decoration hover:text-black">
+      <a className="no-anchor-decoration no-underline text-black hover:text-black">
         <Image
           fluid
           src={url}

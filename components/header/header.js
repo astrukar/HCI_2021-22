@@ -40,7 +40,7 @@ const Header = ({ classes, urlImg }) => {
         <main className="pt-6 max-w-6xl mx-auto flex-grow flex flex-col">
           <div className="z-10 flex justify-between items-center">
             <Link href="/">
-              <a className="z-10 pb-6 items-center text-white text-4xl md:text-5xl lg:text-7xl font-montserrat font-bold hover:text-white">
+              <a className="no-underline z-10 pb-6 items-center text-white text-4xl md:text-5xl lg:text-7xl font-montserrat font-bold hover:text-white">
                 HealthsGo
               </a>
             </Link>

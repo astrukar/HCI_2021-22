@@ -17,7 +17,7 @@ const NavBar = ({ classes, menuItems }) => {
         return (
           <Link key={item} href={menuItemPath} passHref>
             <a
-              className={`mb-2.5 px-7 lg:px-10 py-2 whitespace-nowrap w-min hover:bg-hci-white-dark text-white font-montserrat ${
+              className={`no-underline text-white mb-2.5 px-7 lg:px-10 py-2 whitespace-nowrap w-min hover:bg-hci-white-dark text-white font-montserrat ${
                 isActive(menuItemPath)
                   ? "bg-hci-white-light text-white font-bold"
                   : ""

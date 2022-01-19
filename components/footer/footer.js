@@ -15,7 +15,9 @@ const renderLegalLinks = () =>
     <Col className="flex justify-center" key={link.url}>
       <div className="mb-2">
         <Link href={link.url}>
-          <a className="hover:text-white">{link.label}</a>
+          <a className="no-underline text-white hover:text-white">
+            {link.label}
+          </a>
         </Link>
       </div>
     </Col>
