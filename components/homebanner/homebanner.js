@@ -3,7 +3,7 @@ import { Col, Row } from "react-bootstrap";
 const HomeBanner = () => {
   return (
     <Row className="px-0">
-      <Col sm={12} className="pl-5 py-12 bg-neutral-100">
+      <Col sm={12} className="pl-5 py-6 md:py-12 bg-neutral-100">
         <h1 className="flex justify-center font-bold text-4xl md:text-5xl leading-10 font-montserrat pt-3 pb-2">
           How To Improve Your Health
         </h1>

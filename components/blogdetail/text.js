@@ -1,3 +1,4 @@
+import { Row } from "react-bootstrap";
 export const P = (props) => (
   <Row>
     <p

@@ -33,6 +33,7 @@ const Header = ({ classes, urlImg }) => {
             objectFit="cover"
             priority
             alt="Hero image"
+            className="brightness-90"
           />
         </div>
 
@@ -61,9 +62,12 @@ const Header = ({ classes, urlImg }) => {
             </div>
             <NavBar menuItems={menuItems} />
           </div>
-          <div className="absolute bottom-3 tracking-wide z-10 hidden md:block font-poppins text-base text-white font-light">
-            “You are what you eat, so don't be fast, cheap, easy, or fake.”
-          </div>
+          <div
+            className="absolute bottom-3 tracking-wide z-10 hidden md:block font-poppins text-base text-white font-light"
+            dangerouslySetInnerHTML={{
+              __html: `You are what you eat, so don't be fast, cheap, easy, or fake.`,
+            }}
+          />
         </main>
       </header>
     </Row>
