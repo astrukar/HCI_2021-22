@@ -3,7 +3,7 @@ import { Row } from "react-bootstrap";
 
 const MobileImage = ({ headerMobile }) => {
   return (
-    <div className="flex block md:hidden">
+    <Row className="block md:hidden">
       <Image
         src={headerMobile}
         layout="responsive"
@@ -13,7 +13,7 @@ const MobileImage = ({ headerMobile }) => {
         priority
         alt="Hero image"
       />
-    </div>
+    </Row>
   );
 };
 

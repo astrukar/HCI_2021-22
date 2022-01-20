@@ -8,7 +8,7 @@ import headerImage from "../../public/assets/healthylifestyle.png";
 import { NextSeo } from "next-seo";
 import SEO from "../../data/next-seo.config";
 import { getBlogPosts } from "../../lib/datasourceAPI";
-import imgMobile from "../../public/assets/homegallery/mobileimages/blog.png";
+import imgMobile from "../../public/assets/homegallery/mobileimages/blog.jpeg";
 import MobileImage from "../../components/mobileImg/mobile";
 
 const BlogPage = ({ posts }) => {

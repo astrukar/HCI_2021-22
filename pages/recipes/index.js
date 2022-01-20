@@ -9,7 +9,7 @@ import { NextSeo } from "next-seo";
 import SEO from "../../data/next-seo.config";
 import { getRecipes } from "../../lib/datasourceAPI";
 import { Tag, FilterTag } from "../../components/listcontainer/tags";
-import imgMobile from "../../public/assets/homegallery/mobileimages/recipe.png";
+import imgMobile from "../../public/assets/homegallery/mobileimages/recipes.jpeg";
 import MobileImage from "../../components/mobileImg/mobile";
 
 const Recipes = ({ recipes, tags }) => {
