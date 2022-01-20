@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import HomeBanner from "../components/homebanner/homebanner";
-import BannerWithImage from "../components/bannerWithImage/bannerWithImage";
+import BannerWithImage from "../components/bannerwithimage/bannerwithimage";
 import Footer from "../components/footer/footer";
 import Image from "next/image";
 import Header from "../components/header/header";
@@ -14,7 +14,7 @@ import { articles, recipes } from "../data/homedata";
 const renderRecipes = (props) => {
   return props.map((i, id) => {
     return (
-      <Link href={i.slug} key={id}>
+      <Link href={i.slug} key={id} passHref>
         <Col className="pb-16 mb-2 pr-4 lg:pr-5 pointer hover:opacity-80">
           <Image
             src={i.imgUrl}
