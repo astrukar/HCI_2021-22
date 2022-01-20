@@ -26,20 +26,14 @@ const SignInContainer = () => {
           </span>
         </div>
         <div className="mb-3 flex justify-center">
-          <Button
-            variant={`dark`}
-            className="w-52 md:w-64 joinUsButton text-sm md:text-base font-montserrat hover:opacity-80"
-          >
+          <div className="pt-1.5 md:pt-1 pointer w-52 md:w-64 joinUsButton text-center text-sm text-white md:text-base font-montserrat hover:opacity-80">
             Login
-          </Button>
+          </div>
         </div>
         <div className="mb-16 flex justify-center">
-          <Button
-            variant={`warning`}
-            className="w-52 md:w-64 registrationButton text-sm md:text-base font-montserrat text-white hover:text-white hover:opacity-80"
-          >
+          <div className="pt-1.5 md:pt-1 pointer w-52 md:w-64 registrationButton text-center text-sm md:text-base font-montserrat text-white hover:text-white hover:opacity-80">
             Not A Member Yet?
-          </Button>
+          </div>
         </div>
       </Col>
     </Row>

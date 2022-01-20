@@ -1,13 +1,13 @@
 export const Pblog = (props) => (
   <p
-    className="px-2.5 md:px-6 lg:px-20 text-base font-montserrat md:w-10/12 pb-12"
+    className="pl-5 md:pl-5 lg:pl-20 text-base font-montserrat w-11/12 md:w-10/12 pb-12"
     {...props}
   />
 );
 
 export const Precipe = (props) => (
   <p
-    className="px-2.5 lg:px-16 text-base font-montserrat lg:w-9/12 pb-4"
+    className="pl-2.5 pr-2.5 lg:pl-16 text-base font-montserrat lg:w-9/12 pb-4"
     {...props}
   />
 );

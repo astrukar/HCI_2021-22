@@ -1,4 +1,4 @@
-import { Col, Row, Button } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import ListItem from "./listitem";
 
 const ListContainer = ({ recipes }) => {
@@ -21,14 +21,11 @@ const ListContainer = ({ recipes }) => {
           />
         </Col>
       ))}
-      <Row className="flex justify-center md:px-8 lg:px-28 pb-16 md:pb-14 lg:pb-20">
-        <Button
-          variant={`dark`}
-          className=" mt-5 w-52 md:w-64 joinUsButton text-sm md:text-base font-montserrat hover:opacity-80"
-        >
+      <div className="flex justify-center md:px-8 lg:px-28 pb-16 md:pb-14 lg:pb-20">
+        <div className="pt-1.5 md:pt-1 pointer mt-5 w-52 md:w-64 joinUsButton text-sm text-center text-white md:text-base font-montserrat hover:opacity-80">
           See More
-        </Button>
-      </Row>
+        </div>
+      </div>
     </Row>
   );
 };

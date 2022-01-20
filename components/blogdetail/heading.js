@@ -1,6 +1,6 @@
 export const H2 = (props) => (
   <h2
-    className="pl-4 lg:pl-16 font-bold text-xl md:text-3xl font-montserrat pb-3"
+    className="pl-4 pr-5 lg:pl-16 font-bold text-xl md:text-3xl font-montserrat pb-3"
     {...props}
   />
 );

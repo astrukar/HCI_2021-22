@@ -1,9 +1,9 @@
-import { Col, Row, Button } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import BlogItem from "./blogitem";
 
 const BlogContainer = ({ blogPosts }) => {
   return (
-    <Row className="flex justify-center pt-24 pl-4 md:pl-10 lg:pl-16 pr-4 md:pr-10 lg:pr-16 pb-16">
+    <Row className="flex justify-start pt-24 pl-4 md:pl-10 lg:pl-16 pr-4 md:pr-10 lg:pr-16 pb-16">
       {blogPosts.map((post) => (
         <Col xs={12} md={6} className={`mb-20 p-0 px-md-2`} key={post.sys.id}>
           <BlogItem
@@ -14,12 +14,11 @@ const BlogContainer = ({ blogPosts }) => {
           />
         </Col>
       ))}
-      <Button
-        variant={`dark`}
-        className="w-52 md:w-64 joinUsButton text-sm md:text-base font-montserrat hover:opacity-80"
-      >
-        See More
-      </Button>
+      <div className="flex justify-center">
+        <div className="pt-1.5 md:pt-1 pointer mt-5 w-52 md:w-64 joinUsButton text-sm text-center text-white md:text-base font-montserrat hover:opacity-80">
+          See More
+        </div>
+      </div>
     </Row>
   );
 };
