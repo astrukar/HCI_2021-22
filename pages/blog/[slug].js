@@ -10,7 +10,6 @@ import { Pblog } from "../../components/blogdetail/text";
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import { Ol, Li } from "../../components/blogdetail/list";
-import { Pre, Code } from "../../components/blogdetail/code";
 import { H2 } from "../../components/blogdetail/heading";
 import MobileImage from "../../components/mobileImg/mobile";
 const components = {
@@ -18,9 +17,6 @@ const components = {
   h2: H2,
   ol: Ol,
   li: Li,
-  pre: Pre,
-  code: Code,
-  inlineCode: Code,
 };
 const BlogDetailPage = ({ blog }) => {
   return (
