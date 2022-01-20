@@ -46,7 +46,6 @@ const Home = () => {
               New Recipes
             </h1>
           </Row>
-
           <div className="wrapper lg:pl-10 lg:pr-6">
             {renderRecipes(recipes)}
           </div>

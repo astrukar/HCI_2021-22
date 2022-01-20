@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import AboutContainer from "../components/aboutcontainer/aboutcontainer";
 import Footer from "../components/footer/footer";
 import Header from "../components/header/header";
-import headerImage from "../public/assets/aboutBackground.png";
+import headerImage from "../public/assets/AboutBackground.png";
 import imgMobile from "../public/assets/homegallery/mobileimages/about.jpeg";
 import { NextSeo } from "next-seo";
 import SEO from "../data/next-seo.config";
