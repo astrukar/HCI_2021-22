@@ -22,7 +22,7 @@ const Header = ({ classes, urlImg }) => {
   }, [isClicked]);
 
   return (
-    <Row className="p-0">
+    <Row className="pr-0">
       <header
         className={`pl-5 lg:pl-10 relative flex bg-teal-800 md:bg-transparent sm:h-28 ${classes}`}
       >

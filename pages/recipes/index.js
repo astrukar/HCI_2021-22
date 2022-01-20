@@ -39,7 +39,7 @@ const Recipes = ({ recipes, tags }) => {
           <div className="flex pl-5 md:justify-center font-bold text-5xl leading-10 font-montserrat md:text-6xl pt-16 md:pt-20">
             Recipes
           </div>
-          <p className="max-w-4xl md:text-center text-sm md:text-base font-montserrat pt-3 pb-10 pl-6">
+          <p className="md:max-w-4xl md:text-center text-sm md:text-base font-montserrat pt-3 pb-10 pl-6">
             Find food inspiration and choose recipes you want to eat.With our
             wide recipe collection, you won’t have to eat the same boring meals
             again!

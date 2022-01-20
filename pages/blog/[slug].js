@@ -12,7 +12,7 @@ import { MDXRemote } from "next-mdx-remote";
 import { Ol, Li } from "../../components/blogdetail/list";
 import { Pre, Code } from "../../components/blogdetail/code";
 import { H2 } from "../../components/blogdetail/heading";
-
+import MobileImage from "../../components/mobileImg/mobile";
 const components = {
   p: Pblog,
   h2: H2,
@@ -28,6 +28,7 @@ const BlogDetailPage = ({ blog }) => {
       <NextSeo title={`${SEO.title} - Blog Detail`} />
       <Container fluid className={"no-gutters"}>
         <Header urlImg={blog.desktopImage.url} classes="md:h-44 lg:h-96" />
+        <MobileImage headerMobile={blog.mobileImage.url} />
         <BlogDetail blogPost={blog} />
         <Row>
           <MDXRemote {...blog.mdxSource} components={components} />

@@ -69,12 +69,9 @@ const AboutContainer = () => {
             placeholder="E-mail"
           />
           <br />
-          <Button
-            variant={`dark`}
-            className="w-52 md:w-64 joinUsButton text-sm md:text-base font-montserrat hover:opacity-80"
-          >
+          <div className="pt-1.5 md:pt-1 pointer w-52 md:w-64 joinUsButton text-center text-white text-sm md:text-base font-montserrat hover:opacity-80">
             Sign Up
-          </Button>
+          </div>
         </Col>
       </Row>
     </>
