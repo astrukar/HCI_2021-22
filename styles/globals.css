@@ -82,3 +82,7 @@
 .pointer {
   cursor: pointer;
 }
+.wrapper {
+  display: flex;
+  overflow-x: auto;
+}

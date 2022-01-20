@@ -16,7 +16,7 @@ export const recipes = [
   },
   {
     title: "Berry Banana Smoothie Bowl",
-    imgUrl: "assets/homegallery/recipe4.png",
+    imgUrl: "/assets/homegallery/recipe4.png",
     slug: "/recipes/banana-smoothie-bowl",
   },
 ];
@@ -28,6 +28,11 @@ export const articles = [
     slug: "/blog/diet-for-diabetes",
   },
   {
+    title: "How What You Eat Affects Your Sleep",
+    imgUrl: "/assets/homegallery/article4.png",
+    slug: "/blog",
+  },
+  {
     title: "The Best Hydrating Foods for Diabetes",
     imgUrl: "/assets/homegallery/article2.png",
     slug: "/blog/best-diet-plans",
@@ -35,11 +40,6 @@ export const articles = [
   {
     title: "Using Nutritional Supplements To Improve Sporting Performance",
     imgUrl: "/assets/homegallery/article3.png",
-    slug: "/blog",
-  },
-  {
-    title: "How What You Eat Affects Your Sleep",
-    imgUrl: "/assets/homegallery/article4.png",
     slug: "/blog",
   },
 ];
