@@ -1,11 +1,25 @@
 import { Row, Col, Button } from "react-bootstrap";
-const SignInContainer = () => {
+import { signIn } from "next-auth/react";
+
+const SignInContainer = ({ providers }) => {
   return (
     <Row>
       <Col className="pt-20">
-        <h1 className="flex justify-center font-bold text-5xl lg:text-6xl leading-10 font-montserrat pb-16">
+        <h1 className="flex justify-center font-bold text-5xl lg:text-6xl leading-10 font-montserrat pb-8">
           Login
         </h1>
+        <div className="mt-2 flex justify-center">
+          {Object.values(providers).map((provider) => (
+            <div key={provider.name}>
+              <button
+                className="p-3 font-montserrat text-xs bg-blue-500 rounded-lg text-white"
+                onClick={() => signIn(provider.id, { callbackUrl: "/" })}
+              >
+                Sign in with {provider.name}
+              </button>
+            </div>
+          ))}
+        </div>
         <div className="pt-3 mb-4 pb-3 flex justify-center">
           <input
             className={`loginForm w-96 font-poppins italic text-black`}

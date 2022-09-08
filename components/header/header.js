@@ -5,8 +5,8 @@ import NavBar from "./navbar";
 import BurgerNavigation from "./burgernavigation";
 import hamburgerMenu from "../../public/hamburger.svg";
 import Link from "next/link";
-
-const menuItems = ["Home", "Recipes", "Blog", "About", "Login"];
+import { signOut, signIn, useSession } from "next-auth/react";
+const menuItems = ["Home", "Recipes", "Blog", "About"];
 
 import { useEffect, useState } from "react";
 const Header = ({ classes, urlImg }) => {
@@ -20,7 +20,9 @@ const Header = ({ classes, urlImg }) => {
       body.classList.remove("overflow-hidden");
     }
   }, [isClicked]);
+  const { data: session } = useSession();
 
+  console.log(session);
   return (
     <Row className="pr-0">
       <header
@@ -61,6 +63,31 @@ const Header = ({ classes, urlImg }) => {
               />
             </div>
             <NavBar menuItems={menuItems} />
+            {session ? (
+              <>
+                <button className="d-none d-lg-block no-underline mb-2.5 px-7 py-2 whitespace-nowrap w-min font-montserrat hover:font-bold">
+                  <a
+                    href="/myprofile"
+                    className="hover:no-underline text-white"
+                  >
+                    MyProfile
+                  </a>
+                </button>
+                <button
+                  className="d-none d-lg-block no-underline text-white mb-2.5 py-2 whitespace-nowrap w-min text-white font-montserrat hover:font-bold"
+                  onClick={signOut}
+                >
+                  Sign out
+                </button>
+              </>
+            ) : (
+              <button
+                className="no-underline text-white mb-2.5 py-2 whitespace-nowrap w-min text-white font-montserrat hover:font-bold"
+                onClick={signIn}
+              >
+                Login
+              </button>
+            )}
           </div>
           <div
             className="absolute bottom-3 tracking-wide z-10 hidden md:block font-poppins text-base text-white font-light"
