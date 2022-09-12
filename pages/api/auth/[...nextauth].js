@@ -14,6 +14,7 @@ export default NextAuth({
   pages: {
     signIn: "/login",
   },
+
   callbacks: {
     async session({ session, token, user }) {
       session.user.username = session.user.name
@@ -22,7 +23,7 @@ export default NextAuth({
         .toLocaleLowerCase();
 
       //Andela Strukar
-      //andelastrukar
+      //andela strukar
 
       session.user.uid = token.sub;
 

@@ -82,7 +82,7 @@ const Header = ({ classes, urlImg }) => {
               </>
             ) : (
               <button
-                className="no-underline text-white mb-2.5 py-2 whitespace-nowrap w-min text-white font-montserrat hover:font-bold"
+                className="d-none d-lg-block no-underline text-white mb-2.5 py-2 whitespace-nowrap w-min text-white font-montserrat hover:font-bold"
                 onClick={signIn}
               >
                 Login
