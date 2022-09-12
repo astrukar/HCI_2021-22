@@ -4,7 +4,7 @@ import ListItem from "./listitem";
 
 const ListContainer = ({ recipes }) => {
   const [postNum, setPostNum] = useState(8);
-
+  const totalNumber = 9;
   const handleClick = () => {
     setPostNum((prevPostNum) => prevPostNum + 1);
   };

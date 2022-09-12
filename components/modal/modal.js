@@ -121,10 +121,7 @@ const Modal = () => {
                     onClick={() => filePickerRef.current.click()}
                     className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-teal-100 cursor-pointer"
                   >
-                    {/*<CameraIcon 
-                                   className="h-6 w-6 text-teal-600"
-                                   aria-hidden="true"
-                                   />*/}
+                    <img src="/assets/camera.png" alt="Icons" />
                   </div>
                 )}
 
